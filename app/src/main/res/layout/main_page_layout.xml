@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_page_title"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/motivational_quote"
+        />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dbeceb"
+        android:padding="15dp">
+
+
+        <RadioButton
+            android:id="@+id/workout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout 1"
+            android:onClick="radio_button_click"/>
+
+        <RadioButton
+            android:id="@+id/workout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout 2"
+            android:onClick="radio_button_click"/>
+
+        <RadioButton
+            android:id="@+id/workout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout 3"
+            android:onClick="radio_button_click"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"/>
+
+</LinearLayout>
